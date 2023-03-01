@@ -69,6 +69,9 @@ try:
   else: 
     back_from_function=get_fruityvice_date(fruit_choice)
     streamlit.dataframe(back_from_choice)
+    
+    
+streamlit.stop()
 
 streamlit.text(fruityvice_response.json())
 
@@ -98,7 +101,7 @@ streamlit.dataframe(fruityvice_normalized)
 
 
 
-streamlit.stop()
+# streamlit.stop()
 
 # import snowflake.connector
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
