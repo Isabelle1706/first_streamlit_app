@@ -41,7 +41,7 @@ streamlit.dataframe(fruits_to_show)
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
 streamlit.text(fruityvice_response)
 
-streamlit.header("The fruit load_list contains:|")
+streamlit.header("The fruit load list contains:")
 # Snowflake-related functions
 def get_fruit_load_list():
   with my_cnx.cursor() as my_cur:
